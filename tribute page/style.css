@@ -1,0 +1,36 @@
+h1 {
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 36px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(100, 95, 75);
+}
+.related {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+aside {
+  background-color: rgb(28, 251, 91);
+  border-top: 10px solid rgb(205, 162, 33);
+  border-bottom: 10px solid rgb(205, 162, 33) ;
+  border-left: 10px solid rgb(128, 115, 0);
+  border-right: 10px solid rgb(128, 115, 0);
+  width: 60%;
+  margin:auto;
+  padding:20px;
+ 
+}
+body {
+  background-color: rgb(28, 251, 136)"
+}
+.green-box {
+  background-color: limegreen;
+  
+}
+p {
+  width: 60%;
+  margin:auto;
+  padding:20px; 
+}
