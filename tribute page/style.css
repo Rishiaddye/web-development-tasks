@@ -1,0 +1,18 @@
+h1 {
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 36px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: antiquewhite;
+}
+.related {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+aside {
+  background-color: rgb(28, 251, 91);
+  border-top: 10px solid rgb(128, 115, 0);
+  border-bottom: 10px solid rgb(128, 115, 0);
+}
