@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("joanna-kosinska-7ACuHoezUYk-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  margin-left: 600px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.profile {
+  text-align: center;
+}
+.profile img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+  padding-top: 50px;
+}
+
+.profile-text {
+  width: 50%;
+  color: white;
+}
+.profile h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.profile .subtitle {
+  color: #00ffc8;
+  font-weight: 500;
+}
+
+.section {
+  margin-top: 40px;
+  border-left: 4px solid #00ffc8;
+  padding-left: 20px;
+}
+
+.section h2 {
+  color: #00ffc8;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li::marker {
+  color: #00ffc8;
+}
+
+.skills span {
+  background: #00ffc8;
+  color: #000;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cert-card {
+  background: #1e1e1e;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1 1 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-card h4 {
+  margin: 10px 0 5px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: none;
+  border: 2px solid #00ffc8;
+  color: #00ffc8;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00ffc8;
+  color: #000;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 14px;
+  color: #aaa;
+}
+p {
+  font-weight: bold;
+  font-style: italic;
+}
+h3,
+ul {
+  font-style: italic;
+}
