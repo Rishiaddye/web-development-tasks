@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beginner Friendly Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/a076d05399.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo" tabindex="0">Rishi Addye</div>
+      <nav>
+        <a href="#features" tabindex="0">Features</a>
+        <a href="#about" tabindex="0">About</a>
+        <a href="#contact" tabindex="0">Contact</a>
+        <button
+          id="darkModeToggle"
+          aria-pressed="false"
+          aria-label="Toggle Dark Mode"
+          tabindex="0"
+        >
+          Dark Mode
+        </button>
+      </nav>
+    </header>
+
+    <main class="container" role="main">
+      <section class="hero" aria-label="Welcome section">
+        <h1>Welcome to Your Learning Journey</h1>
+        <p id="typedSubtitle" aria-live="polite" aria-atomic="true"></p>
+        <button class="btn-primary" id="startBtn" aria-label="Get Started">
+          Get Started
+        </button>
+      </section>
+
+      <section
+        id="features"
+        class="features"
+        aria-label="Features and benefits"
+      >
+        <article class="feature-card" tabindex="0">
+          <div class="feature-icon" aria-hidden="true">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3 class="feature-title">Easy Tutorials</h3>
+          <p class="feature-desc">
+            Step-by-step guides designed for complete beginners to grasp
+            concepts quickly.
+          </p>
+        </article>
+        <article class="feature-card" tabindex="0">
+          <div class="feature-icon" aria-hidden="true">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="feature-title">Practical Tips</h3>
+          <p class="feature-desc">
+            Helpful advice and tricks to overcome common challenges and improve
+            your workflow.
+          </p>
+        </article>
+        <article class="feature-card" tabindex="0">
+          <div class="feature-icon" aria-hidden="true">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="feature-title">Community Support</h3>
+          <p class="feature-desc">
+            Join a friendly community that encourages questions and
+            collaboration.
+          </p>
+        </article>
+      </section>
+
+      <section id="about" class="about" aria-label="About this site">
+        <h2>About This Site</h2>
+        <p>
+          This website is created with beginners in mind, to make learning
+          accessible, engaging, and rewarding. Whether you want to code, design,
+          or just build new skills, our content is tailored to help you start
+          strong and keep progressing.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links" aria-label="Social media links">
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          tabindex="0"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+          tabindex="0"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+          tabindex="0"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p>&copy; 2025 by Rishi Addye. All rights reserved.</p>
+    </footer>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
