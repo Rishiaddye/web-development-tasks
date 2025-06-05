@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome Beginner Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo" tabindex="0">Awesome Blog by Rishi Addye</div>
+      <nav>
+        <a href="#posts" tabindex="0">Home</a>
+        <a href="#about" tabindex="0">About</a>
+        <button
+          id="darkModeToggle"
+          aria-pressed="false"
+          aria-label="Toggle Dark Mode"
+          tabindex="0"
+        >
+          Dark Mode
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="posts" id="posts" aria-label="Blog posts">
+        <h2>
+          Blog Posts
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search posts..."
+            aria-label="Search blog posts"
+          />
+        </h2>
+        <!-- Blog posts will be injected here -->
+        <div id="postsContainer"></div>
+
+        <!-- New post form -->
+        <form id="newPostForm" aria-label="Add new blog post">
+          <h3>Add New Post</h3>
+          <label for="postTitle">Title</label>
+          <input
+            type="text"
+            id="postTitle"
+            name="postTitle"
+            placeholder="Post title"
+            required
+          />
+
+          <label for="postCategory">Category</label>
+          <select id="postCategory" name="postCategory" required>
+            <option value="">Select category...</option>
+            <option value="tutorial">Tutorial</option>
+            <option value="news">News</option>
+            <option value="tips">Tips</option>
+            <option value="opinions">Opinions</option>
+            <option value="aircraft">Aircraft</option>
+          </select>
+
+          <label for="postContent">Content</label>
+          <textarea
+            id="postContent"
+            name="postContent"
+            placeholder="Write your post here..."
+            required
+          ></textarea>
+
+          <button type="submit">Publish</button>
+        </form>
+      </section>
+
+      <aside class="sidebar" aria-label="Blog categories and filter">
+        <h3>Categories</h3>
+        <ul
+          class="categories"
+          id="categoryList"
+          tabindex="0"
+          role="listbox"
+          aria-multiselectable="false"
+        >
+          <li
+            data-category="all"
+            class="active"
+            role="option"
+            tabindex="0"
+            aria-selected="true"
+          >
+            All
+          </li>
+          <li
+            data-category="tutorial"
+            role="option"
+            tabindex="0"
+            aria-selected="false"
+          >
+            Tutorial
+          </li>
+          <li
+            data-category="news"
+            role="option"
+            tabindex="0"
+            aria-selected="false"
+          >
+            News
+          </li>
+          <li
+            data-category="tips"
+            role="option"
+            tabindex="0"
+            aria-selected="false"
+          >
+            Tips
+          </li>
+          <li
+            data-category="opinions"
+            role="option"
+            tabindex="0"
+            aria-selected="false"
+          >
+            Opinions
+          </li>
+          <li
+            data-category="aircraft"
+            role="option"
+            tabindex="0"
+            aria-selected="false"
+          >
+            Aircraft
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <section class="about" id="about" aria-label="About this blog">
+      <h2>About This Blog</h2>
+      <p>
+        Welcome to the Awesome Blog! This site is designed for beginners to
+        explore interesting posts about tutorials, news, tips, opinions, and
+        aircraft. Feel free to browse posts or add your own. Enjoy learning and
+        sharing knowledge!
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2025 Awesome Blog by Rishi Addye — Built with ❤️ using HTML, CSS &
+      JavaScript
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
